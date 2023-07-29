@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "5ebdcddf-a733-41ef-b678-dc93abb6d563",
+    "name": "Product-APIs-mongo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "23050191"
+  },
+  "item": [
+    {
+      "name": "get one product",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3003/api/v1/product/64b6b990be8c3565d3f55c00",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3003",
+          "path": ["api", "v1", "product", "64b6b990be8c3565d3f55c00"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get all products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{}}/api/v1/products",
+          "host": ["{{}}"],
+          "path": ["api", "v1", "products"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add products",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n      \"name\": \"collestion testing\",\n      \"price\": 50,\n      \"description\": \"true\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3003/api/v1/product/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3003",
+          "path": ["api", "v1", "product", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Product",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"64b6b990be8c3565d3f55c00\",\n    \"name\": \"Samsung3\",\n    \"price\": 500,\n    \"description\": \"Lorem Ipsum is simply dummy book. It has survived not only five centuries, software like Lorem Ipsum.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3003/api/v1/product",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3003",
+          "path": ["api", "v1", "product"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete one product",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3003/api/v1/product/64b7d998528ea187021255e9",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3003",
+          "path": ["api", "v1", "product", "64b7d998528ea187021255e9"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
